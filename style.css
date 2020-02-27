@@ -1,6 +1,4 @@
-* {
-    outline: 1px dotted royalblue;
-}
+
 body {
     margin: 0;
     margin: 0 auto;
@@ -13,13 +11,30 @@ body {
     font-family: Roboto, sans-serif, Serif;
     color: #ffffff;
 
-    background-color: #849d8f;
-
-
 }
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.button {
+
+    padding: 0 25px;
+
+    height: 45px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 2px 0 0 #bf4a3d;
+
+    background-image: linear-gradient(to bottom, #f26743, #e74b36);
+
+
+
 }
 
 /*---------------------------*/
@@ -60,16 +75,45 @@ a {
 
     border-radius: 20px;
 
-    background-color: antiquewhite; /*временно*/
-
+}
+.main-menu li {
+    position: relative;
 }
 
 /* всплывающее меню каталога*/
 
 .sub-menu {
     position: absolute;
-    display: none;
+    bottom: -155px;
+    left: 3px;
+    display: block;
+
+    width: 143px;
+
+    background-color: #f8f7f4;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #000000;
 }
+.sub-menu-item {
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+
+}
+.sub-menu li:first-child .sub-menu-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    font-weight: 700;
+}
+
+/*-----------------------------*/
 
 
 .user-menu {
@@ -86,7 +130,6 @@ a {
 
 }
 .user-menu li:nth-of-type(1) .user-menu-item {
-    position: relative;
     width: 32px;
     height: 32px;
 
@@ -99,10 +142,11 @@ a {
     border-radius: 50%;
 
 }
+.user-menu li:nth-of-type(1) {
+    position: relative;
+}
 
 .user-menu li:nth-of-type(2) .user-menu-item {
-    position: relative;
-
     margin-left: 10px;
     padding: 8px 0;
     padding-left: 44px;
@@ -120,6 +164,10 @@ a {
     background-position: 15px, 0;
 
 }
+.user-menu li:nth-of-type(2) {
+    position: relative;
+}
+
 .user-menu li:nth-of-type(3) .user-menu-item {
 
     margin-left: 10px;
@@ -142,12 +190,238 @@ a {
 
 /* окно поиска и окно входа в меню nav */
 
-.user-menu .search {
+.search {
     position: absolute;
+    right: 0;
+    bottom: -89px;
+
+    display: block;
+
+    padding: 21px 0;
+
+    width: 341px;
+    height: 84px;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+
+    background-color: #f8f7f4;
+}
+.user-menu .search input {
+    display: block;
+    margin: 0 auto;
+    padding-left: 14px;
+
+    width: 309px;
+    height: 42px;
+    box-sizing: border-box;
+
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+}
+
+
+
+.login {
+    position: absolute;
+    right: 0;
+    bottom: -219px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-top: 20px;
+
+
+    width: 277px;
+    height: 214px;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+
+    background-color: #f8f7f4;
+}
+.login input {
+
+    padding-left: 18px;
+
+    width: 239px;
+    height: 42px;
+    box-sizing: border-box;
+
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+}
+.login button {
+    margin-right: 20px;
+}
+.login div {
+    align-self: center;
+    margin-top: -20px;
+}
+
+.login a {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.login a:nth-of-type(2) {
+    margin-bottom: 0;
+}
+
+/* стили для слайдера */
+
+.slider-conteiner {
+    position: relative;
+    height: 584px;
+    filter: en;
+
+}
+.slider-conteiner p {
+    margin: 0;
+    text-align: right;
+
+}
+.slider-conteiner p span:nth-of-type(1) {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.slider-conteiner p span:nth-of-type(2) {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.sliderOne,
+.sliderTwo,
+.sliderThree {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    padding-top: 320px;
+    width: 100%;
+    height: 584px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+}
+
+.sliderOne {
+
+    background-image: url("imgSlaider/slider-1/Мороженко оба.png"),
+radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.sliderTwo {
+
+    background-image: url("imgSlaider/slider-2/Мороженко оба 2.png"),
+    radial-gradient(rgba(255,255,255, 0.3) 20%, transparent 60%);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.sliderThree {
+
+    background-image: url("imgSlaider/slider-3/Мороженко оба 3.png"),
+    radial-gradient(rgba(255,255,255, 0.3) 20%, transparent 60%);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.sliderOne h1,
+.sliderTwo h1,
+.sliderThree h1 {
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.slider-conteiner .button {
+    display: block;
+
+    margin: 0 auto;
+    padding-top: 5px;
+
+    width: 280px;
+    box-sizing: border-box;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.slider-conteiner label {
+    position: absolute;
+    z-index: 100;
+    display: block;
+
+    width: 19px;
+    height: 19px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.slider-conteiner label:nth-of-type(1) {
+    bottom: 65px;
+    left: 0;
+}
+.slider-conteiner label:nth-of-type(2) {
+    bottom: 65px;
+    left: 29px;
+}
+
+.slider-conteiner label:nth-of-type(3) {
+    bottom: 65px;
+    left: 58px;
+}
+.slider-conteiner input:checked + label {
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.invisible {
     display: none;
 }
 
-.user-menu .login {
-    position: absolute;
-    display: none;
+.theme-1 {
+    background-color: #849d8f;
+}
+.theme-2 {
+    background-color: #8996a6;
+}
+.theme-3 {
+    background-color: #9d8b84;
+
 }
