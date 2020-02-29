@@ -106,7 +106,7 @@
                     <div>
                         <img src="img iscrem index catalog/1.png" alt="" width="267px" height="auto">
                         <p>310 ₽ </p><p>/кг</p>
-                    <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    <a class="ice-cream-name" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                     </div>
                     <div class="catalog-item-wrapper">
                         <a class="button" href="">Быстрый просмотр</a>
@@ -116,7 +116,7 @@
                     <div>
                         <img src="img iscrem index catalog/2.png" alt="" width="267px" height="266px">
                         <p>380 ₽ </p><p>/кг</p>
-                    <a href="">Сливочно-кофейное с кусочками шоколада</a>
+                    <a class="ice-cream-name" href="">Сливочно-кофейное с кусочками шоколада</a>
                     </div>
                     <div class="catalog-item-wrapper">
                         <a class="button" href="">Быстрый просмотр</a>
@@ -126,7 +126,7 @@
                     <div>
                         <img src="img iscrem index catalog/3.png" alt="" width="267px" height="266px">
                         <p>355 ₽ </p><p>/кг</p>
-                    <a href="">Сливочно-клубничное с присыпкой из белого шоколадай</a>
+                    <a class="ice-cream-name" href="">Сливочно-клубничное с присыпкой из белого шоколадай</a>
                     </div>
                     <div class="catalog-item-wrapper">
                         <a class="button" href="">Быстрый просмотр</a>
@@ -136,7 +136,7 @@
                     <div>
                         <img src="img iscrem index catalog/4.png" alt="" width="267px" height="266px">
                         <p>415 ₽</p><p> /кг</p>
-                    <a href="">Сливочное крем-брюле с карамельной подливкой</a>
+                    <a class="ice-cream-name" href="">Сливочное крем-брюле с карамельной подливкой</a>
                     </div>
                     <div class="catalog-item-wrapper">
                         <a class="button" href="">Быстрый просмотр</a>
@@ -175,64 +175,63 @@
                     самого вкусного, что у нас происходит.
                     Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                 </p>
-                <form action="">
+                <form class="write-us-form" action="">
                     <input type="email" name="" id="" placeholder="Электронная почта">
                     <button class="button">Отправить</button>
                 </form>
-
             </div>
         </section>
-         <section>
-             <div>
-                 <p>Адрес главного офиса
-                     и офлайн-магазина:
-                     <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+         <section class="map">
+
+             <div class="contacts">
+                 <p>Адрес главного офиса <br>
+                     и офлайн-магазина: <br>
+                     <span>ул. Большая Конюшенная <br> 19/8, Санкт-Петербург</span>
                  </p>
                  <p>
-                     Для заказов по телефону:
-                     <span>8 812 450-25-25 </span>
+                     Для заказов по телефону: <br>
+                     <span>8 812 450-25-25 </span> <br>
                      (с 10 до 20 ежедневно)
                  </p>
+                 <a class="button button-contacts" href="">Форма обратной связи</a>
              </div>
          </section>
-
     </main>
-    <footer>
-        <div>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+    <footer class="container">
+            <ul class="social-footer">
+                <li class="social-footer-item"><a class="social-footer-link" href=""></a></li>
+                <li class="social-footer-item"><a class="social-footer-link" href=""></a></li>
+                <li class="social-footer-item"><a class="social-footer-link" href=""></a></li>
+                <li class="social-footer-item"><a class="social-footer-link" href=""></a></li>
             </ul>
+            <div class="footer-menu">
+                <div class="footer-menu-1">
+               <a class="footer-menu-link" href="">Для поставщиков</a>
+               <a class="footer-menu-link" href="">О производстве </a>
+                </div>
+                <div class="footer-menu-2">
+               <a class="footer-menu-link" href="">Наши документы</a>
+               <a class="footer-menu-link" href="">Экологические стандарты</a>
+                </div>
+            </div>
+        <div class="footer-copyright">
+            <img src="social icon/logo-htmlacademy-small.png" alt="Htmlacademy"  width="108" height="39">
+            <p>Сделано в <a href="">HTML Academy</a> © 2017</p>
 
         </div>
-        <div>
-            <ul>
-                <li><a href="">Для поставщиков</a></li>
-                <li><a href="">О производстве </a></li>
-                <li><a href="">Наши документы</a></li>
-                <li><a href="">Экологические стандарты</a></li>
-            </ul>
-
-        </div>
-        <div>
-            <img src="" alt="">
-            <p>Сделано в HTML Academy © 2017</p>
-
-        </div>
-
     </footer>
-    <div>
+
+    <div class="modal-feedback">
         <p>Мы обязательно вам ответим!</p>
-        <button></button>
+        <button class="close-modal-feedback"></button>
         <form action="">
-            <input type="text">
-            <input type="email" name="" id="">
-            <textarea></textarea>
-            <button>Отправить</button>
+            <input class="modal-feedback-name" type="text" placeholder="Как вас зовут?">
+            <input class="modal-feedback-email" type="email" name="" id="" placeholder="Ваша почта для ответа?">
+            <textarea class="modal-feedback-message" name="" id="" cols="50" rows="8" placeholder="Напишите что-нибудь..."></textarea>
+            <button class="button sent-feedback-form">Отправить</button>
         </form>
     </div>
+    <div class="overlay-window"></div>
 
     </body>
     <script src="slider.js"></script>
