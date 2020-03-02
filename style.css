@@ -1,18 +1,23 @@
 
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     margin-top: 10px;
 
 
-    min-width: 900px;
-    max-width: 1200px;
+
     box-sizing: border-box;
 
     font-family: Roboto, sans-serif, Serif;
     color: #ffffff;
 }
 .container {
+
+    margin: 0 auto;
+
+    min-width: 900px;
+    max-width: 1200px;
+
     padding-left: 2.25%;
     padding-right: 2.25%;
 }
@@ -23,19 +28,20 @@ a {
 }
 
 .button {
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
 
     height: 45px;
 
     font-size: 18px;
-    line-height: 18px;
+    line-height: 0px;
     font-weight: 700;
     color: #ffffff;
     text-shadow: 0px 0px 3px  rgba(0,0,0, 0.6);
 
     border: none;
-    border-radius: 30px;
+    border-radius: 35px;
     box-shadow: 0 2px 0 0 #a23324;
     outline: none;
 
@@ -72,6 +78,8 @@ a {
     display: flex;
     align-items: center;
 
+    margin-left: 10px;
+
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -79,7 +87,7 @@ a {
 .main-menu-item {
     display: block;
 
-    margin-left: 10px;
+
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 14px;
@@ -374,7 +382,9 @@ a {
     border-radius: 5px;
 }
 .login button {
+
     margin-right: 20px;
+    padding-top: 0;
 }
 .login div {
     align-self: center;
@@ -413,28 +423,32 @@ a {
 }
 .slider-conteiner p {
     margin: 0;
+    line-height: 5px;
     text-align: right;
 
 }
 .slider-conteiner p span:nth-of-type(1) {
+    display: block;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 14px;
     font-weight: 700;
 }
 .slider-conteiner p span:nth-of-type(2) {
+    display: block;
     font-size: 22px;
-    line-height: 24px;
+    line-height: 22px;
     font-weight: 700;
 }
 .sliderOne,
 .sliderTwo,
 .sliderThree {
     position: absolute;
+    z-index: 1;
 
-    top: 0;
+    top: 9px;
     left: 0;
 
-    padding-top: 320px;
+    padding-top: 310px;
     width: 100%;
     height: 584px;
     box-sizing: border-box;
@@ -444,7 +458,7 @@ a {
 
 .sliderOne {
     background-image: url("imgSlaider/slider-1/ice-cream-1.png"),
-radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
+radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -465,7 +479,7 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 .sliderTwo h1,
 .sliderThree h1 {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     font-size: 60px;
     line-height: 60px;
@@ -477,10 +491,13 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 
     margin-right: auto;
     margin-left: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-    padding-top: 5px;
+
 
     width: 280px;
+    height: 65px;
     box-sizing: border-box;
     font-size: 32px;
     line-height: 32px;
@@ -491,24 +508,24 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
     z-index: 100;
     display: block;
 
-    width: 19px;
-    height: 19px;
+    width: 17px;
+    height: 17px;
 
     border: 2px solid #ffffff;
     border-radius: 50%;
 }
 
 .slider-conteiner label:nth-of-type(1) {
-    bottom: 65px;
+    bottom: 74px;
     left: 2.25%;
 }
 .slider-conteiner label:nth-of-type(2) {
-    bottom: 65px;
+    bottom: 74px;
     left: calc(2.25% + 29px);
 }
 
 .slider-conteiner label:nth-of-type(3) {
-    bottom: 65px;
+    bottom: 74px;
     left: calc(2.25% + 58px);
 }
 .slider-conteiner input:checked + label {
@@ -518,16 +535,19 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 /*--------------------------------*/
 
 .banner-container {
+    position: relative;
+    top: -10px;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .banner {
     display: flex;
     flex-wrap: wrap;
 
-    padding-top: 25px;
+    padding-top: 35px;
     padding-bottom: 25px;
     padding-right: 20px;
     padding-left: 20px;
@@ -554,11 +574,11 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 
 .banner h2 {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 
     font-size: 35px;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 0px;
 }
 .banner p {
     margin: 0;
@@ -569,16 +589,16 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
     font-weight: 700;
 }
 .banner .button {
-    display: inline-block;
+    display: block;
 
     margin-left: auto;
-    padding-top: 15px;
+    padding-top: 22px;
 
     box-sizing: border-box;
 }
 /*-------------------------------*/
 .hit-catalog-conteiner {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 .catalog-list {
     display: flex;
@@ -625,7 +645,7 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 
 .catalog-item div p:nth-of-type(1) {
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
     left: 0;
     margin: 0;
 
@@ -635,7 +655,7 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 }
 .catalog-item div p:nth-of-type(2) {
     position: absolute;
-    bottom: 105px;
+    bottom: 75px;
     left: 118px;
     margin: 0;
 
@@ -650,7 +670,7 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
     width: 100%;
     height: auto;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .catalog-item .catalog-item-wrapper {
@@ -714,9 +734,9 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
     justify-content: space-between;
 
     margin-bottom: 40px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
 
 
     color: #323232;
@@ -730,7 +750,8 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 .about-shop h3 {
 
     margin: 0;
-    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 
     font-size: 24px;
     line-height: 30px;
@@ -743,11 +764,15 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 
     width: 100%;
 }
+
+.about-shop div:nth-of-type(1) {
+    margin-bottom: 8px;
+}
 .about-shop p {
     position: relative;
 
     margin: 0;
-    margin-bottom: 0px;
+    margin-left: 10px;
 
     width: 49.5%;
 
@@ -806,7 +831,11 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 
 .blog-news,
 .write-us {
-    padding: 25px 10px 35px 20px;
+
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
 
     width: 48.8%;
     box-sizing: border-box;
@@ -828,6 +857,9 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
 }
 
 .blog-news p {
+
+    margin: 0;
+    margin-bottom: 8px;
 
     font-size: 16px;
     font-weight: 500;
@@ -873,7 +905,10 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
     display: flex;
     justify-content: space-between;
 }
+.write-us-form .button {
 
+    padding-top: 0;
+}
 .write-us input {
 
     width: 368px;
@@ -895,7 +930,6 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
     position: relative;
 
     min-height: 430px;
-
     background-image: url("background banner/Background-map.png");
 }
 
@@ -903,8 +937,10 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
     position: absolute;
     top: 60px;
     right: 2.25%;
+    display: flex;
+    flex-wrap: wrap;
 
-    padding-top: 35px;
+    padding-top: 30px;
     padding-left: 25px;
 
     width: 300px;
@@ -929,14 +965,21 @@ radial-gradient(rgba(255,255,255, 0.3) 20%,  transparent 60%);
     margin-bottom: 25px;
 }
 .button-contacts {
-    display: inline-block;
+    display: block;
+
 
     margin-bottom: 30px;
-    padding-top: 15px;
+    padding-top: 22px;
+    padding-left: 26px;
+    padding-right: 26px;
 
     box-sizing: border-box;
 
     text-align: center;
+}
+
+.map .container {
+    position: relative;
 }
 
 /* стили для футера */
@@ -1003,7 +1046,7 @@ footer {
 }
 
 .social-footer-item:not(:last-of-type) {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 
@@ -1017,7 +1060,8 @@ footer {
 
     margin: 0;
     margin-right: 2.25%;
-    padding: 0;
+
+    padding-top: 20px;
 
     width: 46.6%;
 
@@ -1033,9 +1077,14 @@ footer {
 }
 
 
-.footer-menu-1,
+
 .footer-menu-2 {
     width: 170px;
+}
+.footer-menu-1 {
+    width: 140px;
+
+    padding-left: 15px;
 }
 
 .footer-menu-1 a:first-child {
@@ -1182,6 +1231,7 @@ footer {
 
 .sent-feedback-form {
     margin-left: 295px;
+    padding-top: 0;
 }
 
 .overlay-window {
