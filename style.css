@@ -417,23 +417,24 @@ a {
 
 .slider-conteiner {
     position: relative;
+    top: -30px;
     height: 584px;
 
 
 }
-.slider-conteiner p {
-    margin: 0;
+.schedule  {
+    margin: 0 auto;
     line-height: 5px;
     text-align: right;
 
 }
-.slider-conteiner p span:nth-of-type(1) {
+.schedule span:nth-of-type(1) {
     display: block;
     font-size: 14px;
     line-height: 14px;
     font-weight: 700;
 }
-.slider-conteiner p span:nth-of-type(2) {
+.schedule span:nth-of-type(2) {
     display: block;
     font-size: 22px;
     line-height: 22px;
@@ -445,7 +446,7 @@ a {
     position: absolute;
     z-index: 1;
 
-    top: 9px;
+    top: 0;
     left: 0;
 
     padding-top: 310px;
@@ -458,20 +459,20 @@ a {
 
 .sliderOne {
     background-image: url("imgSlaider/slider-1/ice-cream-1.png"),
-radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
+radial-gradient(#cbf1dc 20%,  transparent 60%);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .sliderTwo {
     background-image: url("imgSlaider/slider-2/ice-cream-2.png"),
-    radial-gradient(rgba(255,255,255, 0.3) 20%, transparent 60%);
+    radial-gradient(#cbdff0 20%, transparent 60%);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 .sliderThree {
     background-image: url("imgSlaider/slider-3/ice-cream-3.png"),
-    radial-gradient(rgba(255,255,255, 0.3) 20%, transparent 60%);
+    radial-gradient( #efdad1 20%, transparent 60%);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -516,16 +517,16 @@ radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
 }
 
 .slider-conteiner label:nth-of-type(1) {
-    bottom: 74px;
+    bottom: 84px;
     left: 2.25%;
 }
 .slider-conteiner label:nth-of-type(2) {
-    bottom: 74px;
+    bottom: 84px;
     left: calc(2.25% + 29px);
 }
 
 .slider-conteiner label:nth-of-type(3) {
-    bottom: 74px;
+    bottom: 84px;
     left: calc(2.25% + 58px);
 }
 .slider-conteiner input:checked + label {
@@ -536,12 +537,11 @@ radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
 
 .banner-container {
     position: relative;
-    top: -10px;
+    top: -50px;
     z-index: 2;
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 30px;
 }
 .banner {
     display: flex;
@@ -598,11 +598,17 @@ radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
 }
 /*-------------------------------*/
 .hit-catalog-conteiner {
-    margin-bottom: 35px;
+    position: relative;
+    top: -10px;
+    margin-bottom: 25px;
 }
 .catalog-list {
     display: flex;
+    flex-wrap: wrap;
+
+
     margin: 0;
+    margin-left: -2%;
     padding: 0;
 
     list-style: none;
@@ -614,10 +620,13 @@ radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
     position: relative;
     z-index:  10;
 
-    max-width: 293px;
+    margin-left: 2%;
+
+    max-width: 23%;
+
 }
 .catalog-item:not(:last-of-type) {
-    margin-right: 2.16%;
+
 }
 
 .catalog-item div:first-of-type {
@@ -661,7 +670,7 @@ radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
 
     font-size: 30px;
     font-weight: 500;
-    text-shadow: 1px 1px 5px  rgba(0,0,0, 0.5);
+    text-shadow: 1px 1px 5px  rgba(0,0,0, 0.6);
 }
 
 .catalog-list img {
@@ -699,14 +708,14 @@ radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
 
     margin-top: auto;
     margin-bottom: 15px;
-    padding-top: 15px;
+    padding-top: 22px;
     padding-left: 15px;
     padding-right: 15px;
 
     box-sizing: border-box;
 }
 
-.catalog-item div:first-of-type::before {
+.hit-catalog-conteiner .catalog-item div:first-of-type::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -928,6 +937,7 @@ radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
 
 .map {
     position: relative;
+    z-index: 1;
 
     min-height: 430px;
     background-image: url("background banner/Background-map.png");
@@ -937,6 +947,7 @@ radial-gradient(rgba(255,255,255, 0.6) 20%,  transparent 60%);
     position: absolute;
     top: 60px;
     right: 2.25%;
+    z-index: 3;
     display: flex;
     flex-wrap: wrap;
 
@@ -1075,8 +1086,6 @@ footer {
 
     margin-bottom: 10px;
 }
-
-
 
 .footer-menu-2 {
     width: 170px;
@@ -1247,6 +1256,55 @@ footer {
 
     background-color: rgba(0,0,0, 0.3);
 }
+
+/*стили для каталога*/
+
+
+body.inner-page {
+    background-color: #99aea2;
+}
+
+.inner-page .catalog-item {
+    margin-bottom: 40px;
+}
+.inner-page .catalog-item:nth-of-type(1) {
+    z-index: 12;
+}
+.inner-page .catalog-item:nth-of-type(2) {
+    z-index: 12;
+}
+.inner-page .catalog-item:nth-of-type(3) {
+    z-index: 12;
+}
+.inner-page .catalog-item:nth-of-type(4) {
+    z-index: 12;
+}
+.inner-page .catalog-item:nth-of-type(5) {
+    z-index: 10;
+}
+.inner-page .catalog-item:nth-of-type(6) {
+    z-index: 10;
+}
+.inner-page .catalog-item:nth-of-type(7) {
+    z-index: 10;
+}
+.inner-page .catalog-item:nth-of-type(8) {
+    z-index: 10;
+}
+.inner-page .catalog-item:nth-of-type(9) {
+    z-index: 8;
+}
+.inner-page .catalog-item:nth-of-type(10) {
+    z-index: 8;
+}
+.inner-page .catalog-item:nth-of-type(11) {
+    z-index: 8;
+}
+.inner-page .catalog-item:nth-of-type(12) {
+    z-index: 8;
+}
+
+
 
 
 
