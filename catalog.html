@@ -12,25 +12,25 @@
     <nav class="menu container">
         <img src="img/LogoGLLACY.svg" alt="Gllasy" width="154px" height="64px">
         <ul class="main-menu">
-            <li class="main-menu-item-sub"><a class="main-menu-item" href="">Каталог</a>
+            <li class="main-menu-item main-menu-item-sub"><a class="main-menu-link main-menu-item-current" href="">Каталог</a>
                 <!-- Скрытое меню католога-->
                 <div class="sub-menu-wrapper">
                     <ul class="sub-menu">
-                        <li><a class="sub-menu-item" href="">Новинки</a></li>
-                        <li><a class="sub-menu-item" href="catalog.html">Сливочное</a></li>
-                        <li><a class="sub-menu-item" href="#">Щербеты</a></li>
-                        <li><a class="sub-menu-item" href="#">Фруктовый лед</a></li>
-                        <li><a class="sub-menu-item" href="#">Мелорин</a></li>
+                        <li class="sub-menu-item"><a class="sub-menu-link" href="">Новинки</a></li>
+                        <li class="sub-menu-item"><a class="sub-menu-link sub-menu-item-current" href="catalog.html">Сливочное</a></li>
+                        <li class="sub-menu-item"><a class="sub-menu-link" href="#">Щербеты</a></li>
+                        <li class="sub-menu-item"><a class="sub-menu-link" href="#">Фруктовый лед</a></li>
+                        <li class="sub-menu-item"><a class="sub-menu-link" href="#">Мелорин</a></li>
                     </ul>
                 </div>
                 <!-------------------------->
             </li>
-            <li><a class="main-menu-item" href="">Доставка и оплата</a></li>
-            <li><a class="main-menu-item" href="">О Компании</a></li>
+            <li class="main-menu-item"><a class="main-menu-link" href="">Доставка и оплата</a></li>
+            <li class="main-menu-item"><a class="main-menu-link" href="">О Компании</a></li>
         </ul>
         <ul class="user-menu">
-            <li class="user-menu-search">
-                <a class="user-menu-item" href=""></a>
+            <li class="user-menu-item user-menu-search">
+                <a class="user-menu-link" href=""></a>
                 <!--всплывабщее окно поиска-->
                 <div class="wrapper-search">
                     <form class="search-form" action="index.html">
@@ -39,7 +39,7 @@
                 </div>
                 <!-------------------------->
             </li>
-            <li class="user-menu-login"><a class="user-menu-item" href="">Вход</a>
+            <li class="user-menu-item user-menu-login"><a class="user-menu-link" href="">Вход</a>
                 <!--всплывабщее окно авторизации-->
                 <div class="login">
                     <form class="login-form" action="#" method="post" name="user-login">
@@ -54,7 +54,33 @@
                 </div>
                 <!-------------------------->
             </li>
-            <li><a class="user-menu-item" href="">Пусто</a></li>
+            <li class="user-menu-item user-menu-basket"><a class="user-menu-link" href="">2 товара</a>
+            <div class="basket-wrapper">
+                <div class="basket">
+                    <table class="basket-table">
+                        <tr class="lain-1">
+                            <td class="colum-1"></td>
+                            <td class="colum-2"><img src="img/ice-cream-mini-1.png" alt="" width="33px" height="33px"></td>
+                            <td class="colum-3">Пломбир с апельсиновым джемом</td>
+                            <td class="colum-4">1,5 кг х <span>200 руб</span></td>
+                            <td class="colum-5">300 руб</td>
+                        </tr>
+                        <tr class="lain-2">
+                            <td class="colum-1"></td>
+                            <td class="colum-2"><img src="img/ice-cream-mini-2.png" alt="" width="33px" height="33px"></td>
+                            <td class="colum-3">Клубничный пломбир с присыпкой  из белого шоколада</td>
+                            <td class="colum-4">1,5 кг х <span>300 руб.</span></td>
+                            <td class="colum-5">450 руб</td>
+                        </tr>
+                        <tr class="total" aria-colspan="5">
+                            <td colspan="5">Итого:750 руб.</td>
+                        </tr>
+                    </table>
+                    <a href="" class="button">Оформить заказ</a>
+                </div>
+            </div>
+
+            </li>
         </ul>
     </nav>
     <p class="schedule container"><span>С 10 до 20, ежедневно</span><br>
@@ -244,6 +270,18 @@
             </li>
         </ul>
     </section>
+    <div class="pagination">
+        <ul class="pagination-list">
+            <li class="pagination-item"><a class="pagination-link-back pagination-link-back-current" href=""></a></li>
+            <li class="pagination-item"><a class="pagination-link-current" href="">1</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="">2</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="">3</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="">4</a></li>
+            <li class="pagination-item"><a class="pagination-link" href="">5</a></li>
+            <li class="pagination-item"><a class="pagination-link-next" href=""></a></li>
+        </ul>
+
+    </div>
 </main>
 <footer class="container">
     <ul class="social-footer">
