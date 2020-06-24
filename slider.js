@@ -1,39 +1,39 @@
 'use strict';
 
-var slider1 = document.querySelector('.sliderOne');
-var slider2 = document.querySelector('.sliderTwo');
-var slider3 = document.querySelector('.sliderThree');
-var bodyTheme = document.querySelector('body');
+const slider1 = document.querySelector('.sliderOne');
+const slider2 = document.querySelector('.sliderTwo');
+const slider3 = document.querySelector('.sliderThree');
+const bodyTheme = document.querySelector('body');
 
-var radioSlider1 = document.querySelector('.radio-slider-1');
-var radioSlider2 = document.querySelector('.radio-slider-2');
-var radioSlider3 = document.querySelector('.radio-slider-3');
-var modalFeedback = document.querySelector('.modal-feedback');
-var buttonContacts = document.querySelector('.button-contacts');
-var closeModalFeedback = document.querySelector('.close-modal-feedback');
-var overlayWindow = document.querySelector('.overlay-window');
+const radioSlider1 = document.querySelector('.radio-slider-1');
+const radioSlider2 = document.querySelector('.radio-slider-2');
+const radioSlider3 = document.querySelector('.radio-slider-3');
+const modalFeedback = document.querySelector('.modal-feedback');
+const buttonContacts = document.querySelector('.button-contacts');
+const closeModalFeedback = document.querySelector('.close-modal-feedback');
+const overlayWindow = document.querySelector('.overlay-window');
 
 
-var checkInput = function (button1, button2, slider1, slider2, color) {
+const checkInput =  (button, slider1, slider2, color) => {
 
-        button2.checked = true;
+        button.checked = true;
         slider2.style.display = 'block';
         slider1.style.display = 'none';
         bodyTheme.style.background = color;
-        console.log(button1.checked, button2.checked)
+
 
 };
 
 
 
 
-var runSlider = function() {
+const runSlider = () => {
     if(radioSlider1.checked) {
-        checkInput(radioSlider1, radioSlider2, slider1, slider2, '#8996a6');
+        checkInput(radioSlider2, slider1, slider2, '#8996a6');
     } else if (radioSlider2.checked) {
-        checkInput(radioSlider2, radioSlider3, slider2, slider3, '#9d8b84');
+        checkInput(radioSlider3, slider2, slider3, '#9d8b84');
     } else if (radioSlider3.checked) {
-        checkInput(radioSlider3, radioSlider1, slider3, slider1, '#849d8f');
+        checkInput(radioSlider1, slider3, slider1, '#849d8f');
     }
 
 };
@@ -41,22 +41,37 @@ var runSlider = function() {
 
 
 
+
+
 setInterval(runSlider, 4000);
 
-console.log(radioSlider1.checked);
+
 
 // для модального окна
 
-buttonContacts.addEventListener('click', function (evt)  {
-    evt.preventDefault();
+const onEscDown = (evt) => {
+    const isEscape = evt.key  === 'Esc' || evt.key === 'Escape';
+    isEscape ? onClosePopup() : '';
+
+
+};
+
+const onPopup = () => {
     modalFeedback.classList.add('visible');
     overlayWindow.classList.add('visible');
+    document.addEventListener('keydown', onEscDown)
+};
 
-});
-
-closeModalFeedback.addEventListener('click', function (evt) {
-    evt.preventDefault();
+const onClosePopup = () => {
     modalFeedback.classList.remove('visible');
     overlayWindow.classList.remove('visible');
-});
+    document.removeEventListener('keydown' , onEscDown)
+};
+
+
+buttonContacts.addEventListener('click', onPopup);
+
+closeModalFeedback.addEventListener('click', onClosePopup);
+
+
 
